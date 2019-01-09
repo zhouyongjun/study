@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+	
+<tables>
+		<config value="bin/*.pid" />
+		<config value="bin/*.log" />
+		<config value="db/*.sql" />
+		<config value="res/temp_data/" />
+</tables>

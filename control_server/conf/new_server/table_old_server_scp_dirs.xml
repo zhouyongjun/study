@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+	
+<tables>
+		<config value="cs_server.jar" />
+		<!-- <config value="mysql.sh" /> -->
+		<config value="db/" />
+		<config value="bin/" />
+		<config value="lib/" />
+		<config value="conf/" />
+		<config value="res/" />
+</tables>

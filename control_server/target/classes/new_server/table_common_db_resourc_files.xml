@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+	
+<tables>
+	<config value="db/common/cs_resources.sql" />
+	<config value="db/common/cs_auto_increment.sql" />
+	<config value="db/common/cs_upgrade_utf8mb4.sql" />
+</tables>

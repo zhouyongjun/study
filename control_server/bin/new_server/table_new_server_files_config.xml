@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+	
+<tables>
+		<config file="bin/cs.sh" >
+			<update name="项目路径" 	pattern="(APP_DIR=').*?(')" replace="$1APP_PATH$2" />
+			<update name="项目lib路径" 	pattern="(APP_LIB=').*?(')" replace="$1APP_PATHlib$2" />
+		</config>
+		<config file="bin/stop.sh" >
+			<update name="项目路径" 	pattern="(APP_DIR=').*?(')" replace="$1APP_PATH$2" />
+			<update name="项目lib路径" 	pattern="(APP_LIB=').*?(')" replace="$1APP_PATHlib$2" /> 
+		</config>
+		<config file="bin/start.sh" >
+			<update name="项目路径" 	pattern="(APP_DIR=').*?(')" replace="$1APP_PATH$2" />
+			<update name="项目lib路径" 	pattern="(APP_LIB=').*?(')" replace="$1APP_PATHlib$2" />
+		</config>	
+		<config file="bin/telnet.sh" >
+			<update name="10进制实例号" 	pattern="(telnet\s+localhost\s+).+"  replace="$1TELNET_PORT" />
+		</config>
+		<!--
+		<config file="mysql.sh">
+			<update name="MYSQL脚本"   pattern="(mysql\s+-h127.0.0.1\s+-P).+(.*?)" 	replace="$1SQL_PORT -uSQL_USERNAME -pSQL_PASSWORD" />
+		</config>
+		 -->
+		<config file="conf/RemoteServices.xml" >
+			<update name="16进制实例号" 	pattern="(RemoteServices.+?)(instanceID)(\s*=\s*)('.*?')(.*?)" replace="$1$2$3'APP_INSTANCE'$5" />
+		</config>
+		<config file="conf/jdbc.properties">
+			<update name="DB地址、端口号和数据库" 		pattern="(jdbc:mysql://).+?(\?)" 	replace="$1localhost:SQL_PORT/DB_NAME$2" />
+			<update name="DB登录账号" 		pattern="(game_user\s*=\s*).*"    					replace="$1SQL_USERNAME" />
+			<update name="DB登录密码" 		pattern="(game_password\s*=\s*).*"   				replace="$1SQL_PASSWORD" />
+		</config>
+		<config file="conf/game.properties">
+			<update name="服务器名字" 	pattern="(SERVER_NAME\s*=\s*).*"   	replace="$1APP_NAME" />
+			<update name="服务器编号" 	pattern="(SERVER_ID\s*=\s*).*"  		replace="$1APP_ID" />
+		</config>
+		<config file="conf/gm_config.properties">
+			<update name="GM端口号" 	pattern="(GM_PORT\s*=\s*).*"  		replace="$1GM_CONSOLE_PORT" />
+		</config>
+</tables>

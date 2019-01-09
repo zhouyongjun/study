@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="control_sever" default="clean" basedir=".">
+  <property environment="env" />
+	<property file="build.properties" />
+	
+	<path id="build.classpath">
+		<fileset dir="${lib}">
+    	<include name="*.jar"/>
+    </fileset>
+	</path>
+	
+	<target name="init">
+       <property name="project_name" value="control_sever" />
+       <property name="srcDir" value="." />
+       <property name="classDir" value="classes" />
+       <property name="jar" value="${basedir}/dist/control_sever.jar" />
+       <property name="obfjar" value="${basedir}/dist/control_sever_obf.jar" />
+       <property name="obfuscationlog" value="${project_name}_obf_log.xml" />	
+       <property name="mainclass" value="com.zyj.SSHMain" />	
+       
+	</target>
+	
+	<target name="compile" depends="init" description="compile java source file">
+		<mkdir dir="${build}"/>
+		<delete>
+			<fileset dir="${build}">
+				<include name="**/*.*"/>
+			</fileset>
+		</delete>
+		<javac srcdir="${src}" destdir="${build}" classpathref="build.classpath" source="${source}" target="${target}"
+			deprecation="on" debug="on" optimize="off"/>
+		<copy todir="${build}" preservelastmodified="true">
+			<fileset dir="${resources}">
+				<include name="**/*.*"/>
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="jar" depends="compile">
+		<mkdir dir="${dist}"/>
+		<jar jarfile="${jar}">
+			<fileset dir="${build}" casesensitive="yes">
+				<include name="**/*.class"/>
+			</fileset>
+			 <manifest>
+        <attribute name="Built-By" value="letang"/>
+        <attribute name="Main-Class" value="com.zyj.SSHMain"/>
+      </manifest>
+		</jar>
+		<copy todir="${dist}" preservelastmodified="true">
+			<fileset dir="${resources}">
+				<include name="**/*.*"/>
+			</fileset>
+		</copy>
+	</target>
+	
+	<!--
+  <target name="obfuscate" depends="jar">
+     <taskdef name="obfuscate" classname="com.yworks.yguard.ObfuscatorTask" classpath="${basedir}/lib/yguard.jar" />
+       <obfuscate mainclass="${mainclass}" logfile="${obfuscationlog}" replaceclassnamestrings="true" conservemanifest="true">
+          <inoutpair in="${jar}" out="${obfjar}" />
+					<externalclasses>
+      			<pathelement location="${basedir}/lib/c3p0-0.9.1.2.jar" />
+        		<pathelement location="${basedir}/lib/commons-logging-1.1.1.jar" />
+        		<pathelement location="${basedir}/lib/log4j-1.2.14.jar" />
+        		<pathelement location="${basedir}/lib/mina-core-2.0.0-M6.jar" />
+        		<pathelement location="${basedir}/lib/mysql-connector-java-5.0.4-bin.jar" />
+        		<pathelement location="${basedir}/lib/slf4j-api-1.5.2.jar" />
+        		<pathelement location="${basedir}/lib/slf4j-log4j12-1.5.2.jar" />
+        		<pathelement location="${basedir}/lib/spring.jar" />
+        		<pathelement location="${basedir}/lib/jdom.jar" />
+					</externalclasses>	           
+          
+           <expose>
+			  		<class name="com.letang.game.DreamMain" methods="public" fields="public" />		
+			  		<class>
+			    		<patternset>
+			    			<include name="com.letang.game.db.*" />
+			    			<exclude name="com.letang.game.DreamMain"/>
+			    		</patternset>
+			  		</class>           		
+           </expose>
+     </obfuscate>
+  </target> 
+  -->
+  
+  <target name="clean" depends="jar">
+     <delete dir="${classDir}" includeEmptyDirs="true" />
+  </target>
+    	
+</project>

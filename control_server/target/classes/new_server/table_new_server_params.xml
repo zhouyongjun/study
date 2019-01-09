@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tables>
+  <config name="新区实例号：" value="0x1203" isSave="2" key="APP_INSTANCE"/>
+  <config name="新区名字：" value="" isSave="0" key="APP_NAME"/>
+  <config name="新区编号：" value="3" isSave="2" key="APP_ID"/>
+  <config name="GM端口号：" value="10003" isSave="2" key="GM_CONSOLE_PORT"/>
+  <config name="TELNET端口号：" value="14611" isSave="2" key="TELNET_PORT"/>
+  <config name="数据库名字：" value="" isSave="0" key="DB_NAME"/>
+  <config name="数据库端口号：" value="" isSave="0" key="SQL_PORT"/>
+  <config name="SQL登陆账号：" value="game" isSave="1" key="SQL_USERNAME"/>
+  <config name="SQL登陆密码(加密)：" value="f`ldA3104/sto" isSave="1" key="SQL_PASSWORD"/>
+  <config name="SQL命令目录：" value=" /opt/mysql/bin/" isSave="1" key="SQL_CMD_DIR"/>
+  <config name="SSH端口号：" value="22" isSave="1" key="SSH_PORT"/>
+  <config name="SSH登陆用户名：" value="cs" isSave="1" key="SSH_USERNAME"/>
+  <config name="SSH登陆密码(加密)：" value="n61Gq49Xb[" isSave="1" key="SSH_PASSWORD"/>
+</tables>

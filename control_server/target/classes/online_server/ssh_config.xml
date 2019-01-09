@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+	<!--
+		basic  基础设置节点
+			app_name:项目名称，不能为空，检测日志时候可能会用到【必须填写】
+			app_jar:游戏jar名称，用于检测更新资源时候，如果有资源，但是游戏未停止的情况【必须填写】
+			unified_server_path：项目统一的目录（服务器项目必须在同一个名字下目录下）【建议使用server，默认值】
+			dir_upload：上传文件存放目录[建议使用默认值]
+			dir_download：下载文件存放目录[建议使用默认值]
+		bash bash命令执行节点
+			start_up 开服命令配置节点
+				chName:工具信息里显示的中文名 命令操作 
+				value 配置服务器项目下带抽象路径的启动脚本（执行立马启动游戏，无选项）,这个不能用原来的脚本（原来的有选项）【必须根据具体游戏修改】
+				return_true_msg 设置开服命令SSH返回的正确启动信息【必须根据具体游戏修改】
+				return_error_msg 设置开服命令 SSH返回的错误信息，一般为游戏进程已经运行中【必须根据具体游戏修改】
+			shut_down 停服命令配置节点
+				chName:工具信息里显示的中文名 命令操作 【必须根据具体游戏修改】
+				value 配置服务器项目下带抽象路径的关服脚本（执行立马停服游戏，无选项）,这个不能用原来的脚本（原来的有选项）【必须根据具体游戏修改】
+				return_true_msg 设置开服命令SSH返回的正确关服信息【必须根据具体游戏修改】
+				return_error_msg 设置开服命令 SSH返回的错误信息，一般为游戏已经停运【必须根据具体游戏修改】
+			tail_log:日志持续接受配置节点
+				chName:
+			 	value:日志路径+名字（一般这个无需改动，都是一样的）【必须根据具体游戏修改】
+		 telnet  telnet命令执行节点	
+		 		end_info:telnet链接以后每次执行反馈结束标志
+		 
+			freeze:服务器命令控制维护保存数据命令
+				chName:
+				value : telnet连接后执行命令【必须根据具体游戏修改】
+			onlineplayer:服务器查看在线人数命令(暂时亦无用,无需改动）
+				chName:
+				value : telnet连接后执行命令
+			
+(log开头表示，日志检测使用)
+		log log日志监控节点
+			startup_control:启动日志检测成功标准配置，支持同时配置多个，同时满足，表示启动成功
+				chName:
+				value : 日志内启动成功标志打印信息 如果出现%s会用 app_name替换【必须根据具体游戏修改】
+			
+			shutdown_control:停服日志检测成功标准配置，支持同时配置多个，同时满足，表示停服成功
+				chName:
+				value : 日志内停服成功标志打印信息 如果出现%s会用 app_name替换【必须根据具体游戏修改】
+				
+			freeze_control:保存数据日志检测成功标准配置，支持同时配置多个，同时满足，表示保存数据成功
+				chName:
+				value : 日志内保存成功标志打印信息 如果出现%s会用 app_name替换【必须根据具体游戏修改】
+	-->
+<ssh>
+  	<basic app_name="cs" app_jar="cs_server.jar" unified_server_path='server' dir_upload="./upload/" dir_download='./download/' 
+  	    server_name="servers_ssh_online" online_serverlist_db_sql ="insert into %s value(%d,0,1,&quot;%s&quot;,null,0,%d,null,0,0);" 
+  	    online_serverlist_db_table ="cs_test;cs_and_cn;cs_and_usa" default_gm_port="10001" />
+  	<bash>
+		<start_up chName="开服" value="bin/start.sh" return_true_msg="Starting %s..." return_error_msg="%s is already running"/>
+  		<shut_down chName="停服" value="bin/stop.sh"  return_true_msg="Successfully stop %s" return_error_msg="%s was not running"/>
+  		<tail_log chName="日志" value="bin/console.log"/>  	
+  	</bash>
+  	<telnet end_info="please input command:">
+		<freeze chName="保存数据" value="freeze"/>
+  		<onlineplayer chName="在线人数" value="onlineplayers"/>  	
+  	</telnet>
+  	<log>
+		<startup_control chName="启动成功！" value="login module successful" />
+  		<shutdown_control  chName="停服成功！" value="demo app stop..."/>
+  		<freeze_control chName="维护保存数据结束" value="FREEZE ALL IS END" />  		
+  	</log>
+</ssh>
