@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Implementation-Title: springboot.dubbo.provider
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: zhouyongjun
+Specification-Vendor: Pivotal Software, Inc.
+Specification-Title: springboot.dubbo.provider
+Implementation-Vendor-Id: zhou
+Build-Jdk: 1.8.0_77
+Specification-Version: 0.0.1-SNAPSHOT
+Implementation-URL: http://projects.spring.io/spring-boot/springboot.d
+ ubbo.provider/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
