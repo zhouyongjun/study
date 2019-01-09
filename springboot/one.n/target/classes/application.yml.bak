@@ -1,0 +1,17 @@
+application: 
+    message: ttttt-yml
+---
+spring: 
+  profiles:
+    active: dev
+    
+application: 
+    message: ttttt-yml-dev
+
+---
+spring:
+  profiles:
+    active: test
+    
+application: 
+    message: ttttt-yml-test

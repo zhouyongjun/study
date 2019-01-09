@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhou.dao.mybatis.MyBatis2UserBeanMapper">
+
+    <resultMap type="com.zhou.dao.jpa.entity.UserBean" id="userMap">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="password" property="password" />
+    </resultMap>
+
+    <select id="getUsers" resultType="com.zhou.dao.jpa.entity.UserBean"
+        resultMap="userMap">
+        select * from user
+    </select>
+        <select id="getUserById" resultType="com.zhou.dao.jpa.entity.UserBean"
+        resultMap="userMap">
+        select * from user where id=#{id}
+    </select>
+
+    <select id="update" parameterType="com.zhou.dao.jpa.entity.UserBean">
+        update user set
+        user_name=#{name},pass_word=#{password}
+        where
+        id=#{id}
+    </select>
+    
+    <select id="del" parameterType="java.lang.Long">
+        delete from user where id=#{id}
+    </select>
+    
+    <select id="save" parameterType="com.zhou.dao.jpa.entity.UserBean">
+        insert into user(name,password) values(#{name},#{password})
+    </select>
+
+</mapper>

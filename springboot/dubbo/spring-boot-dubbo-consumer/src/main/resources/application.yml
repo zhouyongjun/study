@@ -1,0 +1,17 @@
+server: 
+ port: 8081  #端口号
+logging: 
+ config: classpath:log4j2.xml #日志配置
+spring: 
+ dubbo: 
+    application:  #提供方名字及其ID
+      name: consumer
+      id: consumer
+    registry: 
+      #protocol: zookeeper 
+      address: zookeeper://127.0.0.1:2181 #注册中心地址
+    protocol:   
+      name: dubbo  #<在zookeeper 注册中心可以查到路径>
+      port: 20800
+      
+    #scan: com.zhou.dubbo
