@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emails sended_switch="true" sended_user="letangcdn@163.com" sended_passwd="e}8?:;98?" sended_server_host="smtp.163.com">
+<!-- <emails sended_switch="true" sended_user="zhouyj903@163.com" sended_passwd="{k2915641549652" sended_server_host="smtp.163.com"> -->
+  <email type="ERROR" sended_debug="true" loop_maxnum="200" loop_cd_minutes="360" class_name="com.zhou.core.email.listen.EmailListenerImpl">
+       <condfilter param="bug&amp;game|error" class_name="com.zhou.core.email.listen.filter.cond.EmailKeyWordFilter"/>
+       <sendfilter param="minute:3" class_name="com.zhou.core.email.listen.filter.send.TimeOverFilter"/>
+       <sendfilter param="num:1" class_name="com.zhou.core.email.listen.filter.send.CumulativeNumFilter"/>
+       <receiver user="zhou.yj@joymeng.com"/>
+       <receiver user="490658318@qq.com"/>
+   </email>
+   <email type="OSINFORMATION" sended_debug="false" loop_maxnum="1" loop_cd_minutes="1440" class_name="com.zhou.core.email.listen.EmailListenerImpl">
+       <sendfilter param="num:1" class_name="com.zhou.core.email.listen.filter.send.CumulativeNumFilter"/>
+       <receiver user="zhou.yj@joymeng.com"/>
+       <receiver user="490658318@qq.com"/>
+   </email>
+</emails>

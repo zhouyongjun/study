@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/netease/is/antispam/demo=UTF-8
+encoding//src/main/java/com/zhou/core/flow/FlowControl.java=UTF-8
+encoding//src/main/java/com/zhou/core/flow/FlowWithId.java=UTF-8
+encoding//src/main/java/com/zhou/core/flow/IFlowControl.java=UTF-8
+encoding//src/test/java/com/zhou/study/nio/example/mode/nio/NioNonBlockingHttpClient.java=UTF-8
+encoding//src/test/java/com/zhou/study/nio/example/mode/socket/SocketHttpClient.java=UTF-8
+encoding//src/test/java/com/zhou/test/telnet/ConsoleServiceImpl.java=UTF-8
+encoding/<project>=GBK

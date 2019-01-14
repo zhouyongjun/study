@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- monitorInterval 该文件自动检测一次时间(s)，最低配置5秒 -->
+<Configuration monitorInterval="30" status="WARN">
+   <!-- 输出源配置 -->
+  <Appenders>
+      <!--控制台-->
+    <Console name="Console" target="SYSTEM_OUT">
+       <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+    <!-- 游戏总日志文件输出源 -->
+    <RollingFile name="game" fileName="./log/game.log" 
+        filePattern="./log/game.log.%i.%d{yyyy-MM-dd}">
+        <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        <Policies>
+            <!-- 设置每日备份 filePattern格式文件-->
+            <TimeBasedTriggeringPolicy modulate="true" />
+            <!-- 设置满足指定大小则备份 filePattern格式文件 -->
+            <SizeBasedTriggeringPolicy size="512MB" />
+        </Policies>
+    </RollingFile>
+    <!-- 错误文件输出源配置 -->
+    <RollingFile name ="error" fileName="./log/error/error.log" 
+        filePattern="./log/error/error.log.%d{yyyy-MM-dd}">
+        <!-- 配置该文件记录最低门槛过滤器  只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
+        <ThresholdFilter level ="error" onMatch="ACCEPT" onMismatch="DENY" />
+        <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        <Policies>
+            <TimeBasedTriggeringPolicy modulate="true" />
+        </Policies>
+    </RollingFile>
+    <!-- 战斗文件输出源 -->
+  </Appenders>
+  
+  
+  <!-- 日志入口调用配置 -->
+  <Loggers>
+    <Root level="TRACE">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="game"/>
+      <AppenderRef ref="error"/>
+    </Root>
+  </Loggers>
+</Configuration>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vfs vfs_switch="true" interval_second="1">
+	<file name="./target/test-classes/vfs.xml"/>
+	<file name="./target/test-classes/config.properties"/>
+	<file name="./target/test-classes/email.xml"/>
+   	<!-- <event class_name= "" /> -->
+</vfs>

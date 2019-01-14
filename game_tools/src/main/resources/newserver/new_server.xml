@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datas>
+	<!-- 参数配置 -->
+	<params>
+		<param type="INSTANCE" name="实例号" />
+		<param type="SERVER_ID" name="服务器ID" />
+		<param type="SERVER_NAME" name="服务器名" />
+		<param type="GM_PORT" name="GM端口号" />
+		<param type="TELNET_PORT" name="TELNET端口号" />
+		<param type="LOCAL_DB_NAME" name="本服数据库名" />
+		<param type="LOCAL_DB_PORT" name="本服数据库端口号" />
+		<param type="LOCAL_MYSQL_BIN" 	name="MYSQL 路径" />
+		<param type="LOCAL_MYSQL_USER" name="本服MYSQL用户名" />
+		<param type="LOCAL_MYSQL_PWD" name="本服MYSQL密码" />
+		<param type="SSH_PORT" name="SSH 端口号" />
+		<param type="SSH_LOGIN_USER" name="SSH 登录用户" />
+		<param type="SSH_LOGIN_PWD" name=" SSH 登录密码" />
+		<param type="GLOBAL_DB_NAME" name="全服 数据库名" />
+		<param type="GLOBAL_DB_PORT" name="全服 数据库端口号" />
+		<param type="GLOBAL_MYSQL_BIN" name="全服MYSQL 路径" />
+		<param type="GLOBAL_MYSQL_USER" name="全服 MYSQL用户名" />
+		<param type="GLOBAL_MYSQL_PWD" name="全服 MYSQL 密码" />
+		<param type="LOCAL_REDIS_IP" name="本服 REDIS Ip" />
+		<param type="LOCAL_REDIS_PORT" name="本服 REDIS 端口号" />
+		<param type="LOCAL_REDIS_DB_INDEX" name="本服 REDIS 数据库" />
+		<param type="GLOBAL_REDIS_IP" name="全服 REDIS Ip" />
+		<param type="GLOBAL_REDIS_PORT" name="全服 REDIS 端口号" />
+		<param type="GLOBAL_REDIS_DB_INDEX" name="全服 REDIS 数据库" />
+		<param type="SERVER_VERSION" name="服务器版本" />
+		<param type="RMI_PROT" name="RMI RPC端口号" />
+		<param type="PACKAGE_NAME" name="aok_server" />
+		<param type="GAME_SHORTNAME" name="aok" />
+	</params>
+	<!-- 拷贝文件 -->
+	<copyfiles>
+	    <params>
+	        <param type="GAME_SHORTNAMEss" name="ffffff" />
+	    </params>
+		<copyfile file="aok_server.jar"/>
+	</copyfiles>
+</datas>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewprot" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
+<title>Show Focus</title>
+</head>
+<body>
+	<form  role="form" class="form-horizontal">
+		<div class="form-group">
+			<label class="col-sm-2 control-label">聚焦</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control input-lg" value="该输入框获得聚点...">
+			</div>
+		</div>
+		<div class="form-group">
+				<label class="col-sm-2 control-label">禁用</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control input-sm" value="该输入框禁止输入..." disabled>
+				</div>
+			</div>
+		<fieldset disabled="disabled">
+			<div class="form-group">
+				<label class="col-sm-2 control-label">fieldset-禁用</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" value="该输入框禁止输入..." >
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">fieldset禁用选项框</label>
+				<div class="col-sm-10">
+					<select class="form-control"><option>禁止选择</option></select>
+				</div>
+			</div>
+		</fieldset>
+		<div class="form-group has-success">
+			<label class="col-sm-2 control-label">输入成功</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" value="输入成功...">
+			</div>
+		</div>
+		<div class="form-group has-warning">
+			<label class="col-sm-2 control-label">输入警告</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" value="输入警告...">
+			</div>
+		</div>
+		<div class="form-group has-error">
+			<label class="col-sm-2 control-label">输入错误</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" value="输入错误...">
+				<span class="help-block">一个较长的帮助文本块，超过一行，需要扩展到下一行。本实例中的帮助文本总共有两行。</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2">
+				<input type="text" class="form-control" placeholder=".col-lg-2">
+			</div>
+			<div class="col-lg-3">
+				<input type="text" class="form-control" placeholder=".col-lg-3">
+			</div>
+			<div class="col-lg-4">
+				<input type="text" class="form-control" placeholder=".col-lg-4">
+			</div>
+		</div>
+	</form>
+</body>
+</html>

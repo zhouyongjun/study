@@ -1,0 +1,1 @@
+package  com.zhou.core.gm.cs.core.client.console.filter.codec;public class ClientDefaultGmReq extends ClientAbstractGmReq{	public ClientDefaultGmReq(int protocolId) {		super(protocolId);	}	@Override	public void body() {			}}

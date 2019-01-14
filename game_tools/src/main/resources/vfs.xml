@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vfs vfs_switch="true" interval_second="10">
+	<file name="vfs.xml"/>
+	<file name="config.properties"/>
+   	<!-- <event class_name= "" /> -->
+</vfs>

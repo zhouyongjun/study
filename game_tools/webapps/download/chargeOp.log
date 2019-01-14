@@ -1,0 +1,76 @@
+2017-12-28 11:12:23|<onChargeNotify>orderId=1730330|joyId=4946510|uid=4946510052|value=100|orderType=44|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1.00
+2017-12-28 11:12:23|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4946510052
+2017-12-28 11:14:12|<onChargeNotify>orderId=1730332|joyId=4946510|uid=4946510052|value=100|orderType=44|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1.00
+2017-12-28 11:14:12|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4946510052
+2017-12-28 11:14:28|<onChargeNotify>orderId=1730333|joyId=4946510|uid=4946510052|value=600|orderType=44|result=0|msg=base1@zh_6_1_1_1@base1|tvalue=120|payinfo=rmb|6.00
+2017-12-28 11:14:28|RmbShop buy charge or data is error, bannerId=zh_6_1_1_1, productId=base1|zh_6_1_1_1 joyId=4946510052
+2017-12-28 11:21:09|<onChargeNotify>orderId=1730346|joyId=4917273|uid=4917273052|value=100|orderType=47|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 11:21:09|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4917273052
+2017-12-28 11:21:17|<onChargeNotify>orderId=1730347|joyId=4917273|uid=4917273052|value=100|orderType=47|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 11:21:17|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4917273052
+2017-12-28 11:21:36|<onChargeNotify>orderId=1730348|joyId=4917273|uid=4917273052|value=100|orderType=47|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 11:21:36|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4917273052
+2017-12-28 11:22:01|<onChargeNotify>orderId=1730349|joyId=4917273|uid=4917273052|value=100|orderType=47|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 11:22:01|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4917273052
+2017-12-28 11:22:22|<onChargeNotify>orderId=1730350|joyId=4917273|uid=4917273052|value=100|orderType=47|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 11:22:22|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4917273052
+2017-12-28 11:22:39|<onChargeNotify>orderId=1730351|joyId=4917273|uid=4917273052|value=100|orderType=47|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 11:22:39|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4917273052
+2017-12-28 11:22:54|<onChargeNotify>orderId=1730353|joyId=4917273|uid=4917273052|value=100|orderType=47|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 11:22:54|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4917273052
+2017-12-28 11:23:10|<onChargeNotify>orderId=1730354|joyId=4917273|uid=4917273052|value=100|orderType=47|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 11:23:10|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4917273052
+2017-12-28 11:23:27|<onChargeNotify>orderId=1730356|joyId=4917273|uid=4917273052|value=100|orderType=47|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 11:23:27|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4917273052
+2017-12-28 11:23:47|<onChargeNotify>orderId=1730357|joyId=4946510|uid=4946510052|value=1800|orderType=44|result=0|msg=race2@zh_8_1@race2|tvalue=360|payinfo=rmb|18.00
+2017-12-28 11:23:47|RmbShop buy charge or data is error, bannerId=zh_8_1, productId=race2|zh_8_1 joyId=4946510052
+2017-12-28 11:24:02|<onChargeNotify>orderId=1730358|joyId=4917273|uid=4917273052|value=100|orderType=47|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 11:24:02|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4917273052
+2017-12-28 11:24:16|<onChargeNotify>orderId=1730359|joyId=4562438|uid=4562438052|value=100|orderType=44|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1.00
+2017-12-28 11:24:16|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4562438052
+2017-12-28 11:26:51|<onChargeNotify>orderId=1730366|joyId=4918762|uid=4918762052|value=100|orderType=42|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 11:26:51|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4918762052
+2017-12-28 11:27:43|<onChargeNotify>orderId=1730371|joyId=4918762|uid=4918762052|value=100|orderType=42|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 11:27:43|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4918762052
+2017-12-28 11:28:45|<onChargeNotify>orderId=1730373|joyId=4917273|uid=4917273052|value=100|orderType=47|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 11:28:45|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4917273052
+2017-12-28 11:31:14|<onChargeNotify>orderId=1730378|joyId=4562438|uid=4562438052|value=100|orderType=44|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1.00
+2017-12-28 11:31:14|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4562438052
+2017-12-28 12:03:56|<onChargeNotify>orderId=1730424|joyId=4917273|uid=4917273052|value=100|orderType=47|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 12:03:56|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4917273052
+2017-12-28 12:05:43|<onChargeNotify>orderId=1730427|joyId=4917273|uid=4917273052|value=9800|orderType=47|result=0|msg=paid_small_month_card@zh_month_card@paid_small_month_card|tvalue=1960|payinfo=rmb|98
+2017-12-28 12:05:43|RmbShop buy charge or data is error, bannerId=zh_month_card, productId=paid_small_month_card|zh_month_card joyId=4917273052
+2017-12-28 12:06:02|<onChargeNotify>orderId=1730429|joyId=4917273|uid=4917273052|value=19800|orderType=47|result=0|msg=paid_big_month_card@zh_month_card@paid_big_month_card|tvalue=3960|payinfo=rmb|198
+2017-12-28 12:06:02|RmbShop buy charge or data is error, bannerId=zh_month_card, productId=paid_big_month_card|zh_month_card joyId=4917273052
+2017-12-28 12:36:06|<onChargeNotify>orderId=1730482|joyId=4877769052|uid=4877769052|value=100|orderType=3|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 12:36:06|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4877769052
+2017-12-28 12:40:43|<onChargeNotify>orderId=1730495|joyId=4877769052|uid=4877769052|value=100|orderType=3|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 12:40:43|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4877769052
+2017-12-28 12:48:46|<onChargeNotify>orderId=1730504|joyId=4946510|uid=4946510052|value=100|orderType=44|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1.00
+2017-12-28 12:48:46|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4946510052
+2017-12-28 13:03:07|<onChargeNotify>orderId=1730520|joyId=4932213|uid=4932213052|value=100|orderType=42|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 13:03:07|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4932213052
+2017-12-28 13:25:11|<onChargeNotify>orderId=1730578|joyId=4917273|uid=4917273052|value=100|orderType=47|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 13:25:11|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4917273052
+2017-12-28 13:51:40|<onChargeNotify>orderId=1730621|joyId=4595333|uid=4595333052|value=100|orderType=55|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 13:51:40|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4595333052
+2017-12-28 13:52:27|<onChargeNotify>orderId=1730622|joyId=4386088|uid=4386088052|value=100|orderType=5|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1.00
+2017-12-28 13:52:27|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4386088052
+2017-12-28 13:52:50|<onChargeNotify>orderId=1730623|joyId=4386088|uid=4386088052|value=100|orderType=5|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1.00
+2017-12-28 13:52:50|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=4386088052
+2017-12-28 14:07:45|<onChargeNotify>orderId=1730669|joyId=5047338052|uid=5047338052|value=100|orderType=3|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 14:07:45|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=5047338052
+2017-12-28 14:08:52|<onChargeNotify>orderId=1730670|joyId=5047309|uid=5047309052|value=100|orderType=44|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1.00
+2017-12-28 14:08:52|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=5047309052
+2017-12-28 14:09:31|<onChargeNotify>orderId=1730673|joyId=5047309|uid=5047309052|value=100|orderType=44|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1.00
+2017-12-28 14:09:31|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=5047309052
+2017-12-28 14:11:38|<onChargeNotify>orderId=1730677|joyId=3872517|uid=3872517052|value=600|orderType=5|result=0|msg=base1@zh_6_1_1_1@base1|tvalue=120|payinfo=rmb|6.00
+2017-12-28 14:11:38|RmbShop buy charge or data is error, bannerId=zh_6_1_1_1, productId=base1|zh_6_1_1_1 joyId=3872517052
+2017-12-28 14:14:45|<onChargeNotify>orderId=1730681|joyId=5047221052|uid=5047221052|value=100|orderType=3|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 14:14:45|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=5047221052
+2017-12-28 14:16:25|<onChargeNotify>orderId=1730682|joyId=5038705052|uid=5038705052|value=100|orderType=81|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 14:16:25|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=5038705052
+2017-12-28 14:25:03|<onChargeNotify>orderId=1730688|joyId=3872517|uid=3872517052|value=600|orderType=5|result=0|msg=paid_0_35@zh_10_1@paid_0_35|tvalue=120|payinfo=rmb|6.00
+2017-12-28 14:25:03|RmbShop buy charge or data is error, bannerId=zh_10_1, productId=paid_0_35|zh_10_1 joyId=3872517052
+2017-12-28 14:28:18|<onChargeNotify>orderId=1730689|joyId=5047827|uid=5047827052|value=100|orderType=42|result=0|msg=engineer2@zh_1_1@engineer2|tvalue=20|payinfo=rmb|1
+2017-12-28 14:28:18|RmbShop buy charge or data is error, bannerId=zh_1_1, productId=engineer2|zh_1_1 joyId=5047827052

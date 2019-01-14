@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+       	<bean id="abstractGameServiceClient" class="org.springframework.remoting.rmi.RmiProxyFactoryBean" abstract="true">
+       	    <property name="serviceInterface" value="com.zhou.test.spring.rmi.server.GameService"/>
+       	    <property name="refreshStubOnConnectFailure" value="true"/>
+       	    <property name="lookupStubOnStartup" value="false"/>
+       	</bean>
+       	<bean id="gameService" parent="abstractGameServiceClient">
+       	    <property name="serviceUrl" value="rmi://10.80.1.42:20099/GameService"/>
+       	</bean>
+</beans>    
