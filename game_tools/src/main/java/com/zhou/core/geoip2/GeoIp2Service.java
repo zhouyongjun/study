@@ -61,7 +61,7 @@ public class GeoIp2Service {
                 InetAddress ipAddress = InetAddress.getByName(ip);
                 CountryResponse response = country_reader.country(ipAddress);
                 Country country = response.getCountry();
-                System.out.println(JsonUtil.toJson(country.getNames()));
+//                System.out.println(JsonUtil.toJson(country));
                 countryCode = country.getIsoCode();
             } catch (Exception e) {
             	 LOGGER.error("GeoIP DatabaseReader["+ip+"] is not exist.");

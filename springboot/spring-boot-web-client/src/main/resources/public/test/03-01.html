@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 页面布局</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+            <nav>
+                <a class='Home active' href="#">Home</a>
+                <a class='Course' href="#">Course</a>
+                <a class='Actual' href="#">Actual</a>
+                <a class='Plan' href="#">Plan</a>
+                <a class='FAQ' href="#">FAQ</a>
+                <a class='Notes' href="#">Notes</a>
+            </nav>
+        </div>  
+    </header>
+    <section class="banner">
+        <ul>
+            <li class="left"><a href="#"><img src="./images/banner/banner1.jpg" alt="1"></a></li>
+            <li class="active"><a href="#"><img src="./images/banner/banner2.jpg" alt="2"></a></li>
+            <li class="right"><a href="#"><img src="./images/banner/banner3.jpg" alt="3"></a></li>
+        </ul>
+    </section>
+    <section class="main">
+        <aside>
+            <!-- <samp> 标签表示一段用户应该对其没有什么其他解释的文本字符。要从正常的上下文抽取这些字符时，通常要用到这个标签 -->
+            <h1>Recent  <samp>Course</samp></h1>
+            <dl>
+                <dt>Hyper Text Markup Language</dt>
+                <dd>HTML is the standard markup language used to create web pages and its elements form the building blocks of all websites.</dd>
+                <dd><img src="./images/Course/05_05.png" alt="1"></dd>
+            </dl>
+            <dl>
+                <dt>Cascading Style Sheets</dt>
+                <dd>Cascading Style Sheets (CSS) is a simple mechanism for adding style (e.g., fonts, colors, spacing) to Web documents.</dd>
+                <dd><img src="./images/Course/06_04.png" alt="2"></dd>
+            </dl>
+            <dl>
+                <dt>JavaScript</dt>
+                <dd>JavaScript is a high-level, dynamic, untyped, and interpreted programming language.</dd>
+                <dd><img src="./images/Course/09_07.png" alt="3"></dd>
+            </dl>
+            <dl>
+                <dt>AngularJS</dt>
+                <dd>AngularJS is an open-source web application framework mainly maintained by Google and by a community of individuals and...</dd>
+                <dd><img src="./images/Course/02_09.png" alt="4"></dd>
+            </dl>
+        </aside>
+        <article>
+            <h1>Welcome to <samp>Massive Open Online Course!</samp></h1>
+            <p>We provide the latest knowledge to help you cope with the changing world!</p>
+            <img src="./images/article.jpg" alt="11">
+            <p>We hope that all the students who love the Internet can be more convenient access to learning resources, using the Internet thinking to change our learning.</p>
+            <p>Focus on IT skills education MOOC, consistent with the development trend of the Internet down to earth's MOOC. We are free, we only teach useful, we concentrate on education.</p>
+        </article>
+    </section>
+    <footer>
+        <div class="container">
+            <p>Copyright © 2016 imooc.com All Rights Reserved.</p>
+            <span>
+                <img src="./images/icon/qq.png" alt="1">
+                <img src="./images/icon/sina.png" alt="2">
+                <img src="./images/icon/weichat.png" alt="3">
+            </span>
+        </div>
+    </footer>
+</body>
+</html>

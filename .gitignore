@@ -1,3 +1,4 @@
 *.log
 springboot/spring-boot-web-client/log/app.log.1.2019-01-11
 springboot/spring-boot-web-client/log/app.log
+*.log

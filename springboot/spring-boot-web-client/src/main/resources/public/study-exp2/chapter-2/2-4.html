@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>垂直手风琴</title>
+	<style type="text/css">
+		*{padding: 0;margin: 0}
+		
+		article
+		{
+			width:500px;
+			background: #fff;
+			color:#424242;
+			font: 12px Arial,Verdana,sans-serif;
+			margin: 0 auto;
+			padding: 10px;
+		}
+		
+		.sct h2{
+			margin: 5px 0;
+			padding: 0;
+			position: relative;
+		}
+		.sct h2:before{
+			border: 5px solid #fff;
+			border-color: #fff transparent transparent transparent;
+			content: "";
+			color:red;
+			height: 0;
+			position: absolute;
+			right: 10px;
+			top:15px;
+			width: 0;
+		}
+		.sct h2 a
+		{
+			background: #8f8f8f;
+			border-radius: 5px;
+			color: #424242;
+			display: block;
+			font-size: 13px;
+			font-weight: normal;
+			margin: 0;
+			padding: 10px 10px;
+			text-shadow:2px 2px 2px #aeaeae;
+			text-decoration: none;
+		}
+	 	.sct:target h2 a,
+		.sct:target h2 a:focus,
+		.sct:target h2 a:hover,
+		.sct:target h2 a:active {
+			background:#2288dd;
+		}
+		.sct:target p
+		{
+			height: 100px;
+			overflow: auto;
+		}
+		.sct p
+		{
+			margin:0;
+			height: 0;
+			overflow: hidden;
+			padding: 0 10px;
+			transition: height 0.5s ease-in;
+		}
+		
+		.sct:target h2:before{
+		border-color:  transparent transparent transparent #fff;
+		}
+		.t h2{
+			margin: 5px 0;
+			padding: 0;
+			position: relative;
+		}
+		.t h2:before{
+			border: 5px solid #fff;
+			border-color: #fff transparent transparent transparent;
+			content: "";
+			height: 0;
+			position: absolute;
+			right: 10px;
+			top:15px;
+			width: 0;
+		}
+		
+		.t h2 a
+		{
+			background: #8f8f8f;
+			border-radius: 5px;
+			color: #424242;
+			display: block;
+			font-size: 13px;
+			font-weight: normal;
+			margin: 0;
+			padding: 10px 10px;
+			text-shadow:2px 2px 2px #aeaeae;
+			text-decoration: none;
+		}
+} 
+	</style>
+</head>
+<body>
+	<article>
+		<section class="sct" id="brand">
+			<h2><a href="#brand">Brand</a></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		<section class="sct" id="promotion">
+			<h2><a href="#promotion">Promotion</a></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+		</section>
+		<section class="sct" id="event">
+			<h2><a href="#event">Event</a></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+		</section>
+		
+		
+	<section class="t" id="t">
+			<h2><a href="#t">TTTTTTTTTTTTT</a></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+	</article>
+</body>
+</html>

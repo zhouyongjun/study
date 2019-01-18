@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	body {
+	padding: 0;
+	margin: 0 auto;
+	width: 600px;
+	height: 400px;
+	font-size: 100%;
+	font-family: sans-serif;
+}
+	nav {
+		background-color: green;
+	}
+	header {
+		background-color: aqua;
+	} 
+	.out
+	{
+		padding:  0;
+		margin: 0;
+	}
+	
+	.out > aside {
+	background: lime;
+	float: right;
+	width: 20%;
+	text-align: left;
+	font-size: 10px;
+	}
+	.main {
+	width: 75%;
+	background-color: maroon;
+	}
+	.main > .aside {
+	background: lime; 
+	width:20%;
+	font-size:  10px;
+	text-align: left;
+	float: left;
+	border: 1px solid red;
+	}
+	.main .art{
+		background: olive;
+	}
+	footer {
+		background: orange;
+		float:none;
+	}
+	
+	ol {
+	list-style: none;
+	 padding: 0;
+	 margin: 0;
+	}
+	ol li a
+	{
+		text-decoration: none;
+		color: red;
+		display: table;
+	}
+	a:FOCUS,a:HOVER {
+		font-size: 120%;
+		color: yellow;
+	}
+	
+</style>
+</head>
+<body>
+	<nav>
+		<ol>
+		<li><a href="#">内容</a></li>
+		<li><a href="#">视频</a></li>
+		<li><a href="#">图片</a></li>
+		<li><a href="#">设置</a></li>
+		</ol>
+	</nav>
+	<header>头信息</header>
+	<div class="out">
+		<aside>
+			<ol>
+				<h2>相关链接</h2>
+				<li><a href="#">XXXX 1</a></li>
+				<li><a href="#">XXXX 2</a></li>
+				<li><a href="#">XXXX 3</a></li>
+				<li><a href="#">XXXX 4</a></li>
+			</ol>
+		</aside>
+		<div class="main">
+			<div class="aside">
+				<ol>
+					<h3>我的操作</h3>
+					<li><a href="#">www 1</a></li>
+					<li><a href="#">www 2</a></li>
+					<li><a href="#">www 3</a></li>
+					<li><a href="#">www 4</a></li>
+				</ol>
+			</div>
+			<div class="art">
+				<article>
+					<section>
+						<h2>2018年总结</h2>
+						<p>递四方速递放到放到方法的防守方是否的</p>
+					</section>
+					<section>
+						<h2>2019年总结</h2>
+						<p>打的死分地方对方的发</p>
+					</section>
+				</article>
+			</div>
+		</div>
+	</div>
+	<footer>
+			@COPY 2018.9 - 2019.10 zhouyongjun
+			<address>TEL:18855126063</address>
+	</footer>
+</body>
+</html>
