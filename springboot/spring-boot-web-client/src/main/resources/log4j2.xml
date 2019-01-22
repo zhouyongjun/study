@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- monitorInterval 该文件自动检测一次时间(s)，最低配置5秒 -->
-<Configuration monitorInterval="30" status="DEBUG">
+<Configuration monitorInterval="30" status="INFO">
    <!-- 输出源配置 -->
   <Appenders>
       <!--控制台-->
@@ -46,6 +46,10 @@
     <Logger name="org.apache.activemq" level="info" additivity="false">
         <AppenderRef ref="Console" />
     </Logger>
+    <Logger name="org.apache.zookeeper" level="info" additivity="false">
+        <AppenderRef ref="Console" />
+    </Logger>
+    
     <Root level="DEBUG">
       <AppenderRef ref="Console"/>
       <AppenderRef ref="error"/>
