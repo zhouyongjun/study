@@ -1,0 +1,121 @@
+body{
+	padding: 0;
+	margin:0 auto;
+	font-size: 100%;
+	max-width: 960px;
+	border: 2px solid red;
+}
+
+ ul
+ {
+ 	list-style: none;
+ }
+ ul li
+ {
+ 	display: inline-block;
+ }
+ nav 
+ {
+ 	border-top: 5px solid #7d8;
+ 	/* border-bottom:1px solid #ccc; */
+ }
+ nav li 
+ {
+ font-size:150%;
+ font-family: 楷体,sans-serif;
+  border-left: 1px solid #ccc;
+  padding: 1px 10px;
+ }
+ nav li:FIRST-CHILD
+ {
+ 	border-left: none;
+ }
+ main
+ {
+ 	float: left;
+ 	width: 62.5%;
+ }
+ 
+ .sidebar
+ {
+ 	float:  right;
+ 	width:  31.5%;
+ }
+ .post
+ {
+ 	padding: 1px 3px;
+ }
+ 
+ .post-blurb
+ {
+ 	overflow: auto;
+ }
+ .clearfix:AFTER,.clearfix:BEFORE
+ {
+  content: " ";
+  display: table;
+  
+ }
+ 
+ .clearfix:AFTER
+ {
+ 	clear: both;
+ }
+ 
+ .mastead
+ {
+ 	padding: 1px 1em; 
+ 	
+ }
+ main
+ {
+ 	/* background-color: #ccc; */
+ 	border-right:2px solid gray;
+ 	padding-right: 10px;
+ }
+ /* .sidebar
+ {
+ 
+ 	padding: 1px 5px;
+ 	background-color: #cca;
+ } */
+ 
+ .mod
+ {
+ 	border-top:2px solid gray;
+ }
+  
+ .footer
+ {
+ 	margin: 1px 3px;
+ 	border-top:2px solid gray;
+ 	text-align: center;
+ 	font-size: 80%;
+ }
+ 
+ .container
+ {
+ 	margin: 5px 1em 2px;
+ 	border-top:2px solid gray;
+ }
+ .mastead
+ {
+ position:relative;
+ }
+ 
+ .social-sites
+ {
+ 	position: absolute;
+ 	top: 51px;
+ 	right: 5px;
+ }
+ .about
+ {
+ 	background: black;
+ 	color: white;
+ 	margin: 1px 1px;
+ 	padding:1px 2px;
+ }
+ 
+
+ 

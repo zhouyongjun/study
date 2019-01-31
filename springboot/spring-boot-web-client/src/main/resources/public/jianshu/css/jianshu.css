@@ -1,0 +1,91 @@
+.page
+{
+	margin: 0 auto;
+	padding: 0;
+	font-size: 100%;
+	font-family: 宋体,sans-serif;
+	/* background: gray; */
+}
+a
+{
+	color:black;
+	list-style: none;
+	text-decoration: none;
+}
+nav
+{
+	width: 96%;
+	padding:  1px 1px;
+	position: relative;
+}
+.logo
+{
+	width: 25%;
+}
+.nav-middle
+{
+	float: right;
+	width: 65%;
+	position: absolute;
+	top: 2.5em;
+	right: 2em;
+}
+.nav-search
+{
+	width: 45%;
+	clear: none;
+}
+.nav-last
+{
+	width: 45%;
+	float:right;
+	position: absolute;
+	top: 0.1em;
+	right:0px; 
+}
+.clearfix:AFTER,.clearfix:BEFORE
+{
+	content:" ";
+	display: block;
+}
+.clearfix:AFTER {
+	clear: both;
+}
+/* div
+{
+	border: 1px solid #ccc;
+} */
+nav a
+{
+	font-size: 1.2em;
+	padding: 0.5em 0.5em;
+	border-radius: .5em;
+}
+a:ACTIVE,a:FOCUS,a:HOVER
+{
+	background:  #ea6f5a;
+}
+.register
+{
+	border-radius: 25%;
+	padding: 0.5em 0.9em;
+	border: 1px solid #f1907f;
+	color: #f1907f;
+}
+.write
+{
+	border-radius: 25%;
+	margin-left:	2em;
+	padding: 0.5em 0.9em;
+	border: 1px solid #ea6f5a;
+	background-color: #ea6f5a;
+	color: white;
+}
+.search
+{
+	padding: 0.5em 0.9em;
+	border-radius: 0.5em;
+	margin: -0.2em 0.2em;
+	vertical-align: baseline;
+}
+
