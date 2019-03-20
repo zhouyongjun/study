@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="./bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+	.page {
+		margin: auto 16px;
+	}
+	.nav-left {
+		float: left;
+		margin: auto 16px;
+		background: black;
+		max-width: 20%;
+		padding: auto 10px;
+		min-height: 80%;
+	}
+	.container {
+		margin: auto 16px;
+		max-width: 80%;
+	}
+	.table
+	{
+		max-width: 80%;
+	}
+	
+</style>
+</head>
+<body>
+	<nav role="navigation" class="navbar navbar-default">
+			<div class="container-fluid" />
+			<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target="#example-navbar-collapse">
+						<!-- <span class="src-only">切换导航</span> -->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" >我的工作空间</a>
+				</div>
+			<div class="collapse navbar-collapse" id="example-navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#">工作安排</a></li>
+					<li><a href="#">博客空间</a></li>
+					<li class="drowdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							我的管理 <b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">账号管理</a></li>
+							<li class="divider"></li>
+							<li><a href="#">退出</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	<div class="page">
+		<div class="nav-left">
+			<ul class="nav nav-pills nav-stacked">
+				<li class="active"><a href="#">周计划</a></li>
+				<li ><a href="#">月计划</a></li>
+				<li ><a href="#">年计划</a></li>
+			</ul>
+		</div>
+		<div class="container">
+				<table class="table">
+				<caption>这是一个测试的table表</caption>
+					<thead>
+					<tr class="text-strong">
+					<td>姓名</td>
+					<td>年龄</td>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+					<td>张山</td>
+					<td>1</td>
+					</tr>
+					<tr>
+					<td>李四</td>
+					<td>111</td>
+					</tr>
+					<tr>
+					<td>王二</td>
+					<td>22</td>
+					</tr>
+					<tr>
+					<td>麻雀</td>
+					<td>50</td>
+					</tr>
+					<tr>
+					<td>凤凰</td>
+					<td>232</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</body>
+</html>
